@@ -1,0 +1,41 @@
+let users=[
+  {
+    name: 'a',
+    password: 1,
+    tarapume:'alcohol'
+  },
+  {
+    name:'b',
+    password: 2,
+    tarapume:'alcohol 1',
+  },
+];
+let hivanduthyun=[
+  {
+    name:"c",
+    simptom:"text",
+    bujum:'d'
+  },
+  {
+    name:'f',
+    simptom:'text1',
+    bujum:'j',
+  },
+]; 
+let login=prompt("enter name"); 
+let password=+prompt('enter your pass');
+  for(let i=0;i<users.length;i++){
+    if(users[i].name===login&&users[i].password===password){
+      console.log(`welcome dear ${login}`);
+      console.log(`You have ${users[i].tarapume} hivanduthyun`);
+      }
+  };
+let  simptom;
+let boxoq=prompt("Mutqagreq dze simtomnern");
+for(let i=0;i<hivanduthyun.length;i++){
+  if(boxoq===hivanduthyun[i].simptom){
+    console.log(`Dear you have ${hivanduthyun[i].name}  hivanduthyun `);
+console.log(` Your bujum is   ${hivanduthyun[i].bujum}`)
+  break;
+  }
+}
